@@ -8,4 +8,5 @@ RUN apt-get update && apt-get -y install \
     tar xz-utils bzip2 gzip \
     file \
     rsync \
-    sed
+    sed \
+    upx
