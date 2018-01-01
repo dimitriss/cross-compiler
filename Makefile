@@ -2,10 +2,8 @@ PLATFORMS = linux-arm64 \
 		linux-arm \
 		linux-x64 \
 		linux-x86 \
-		windows-x86 \
 		windows-x64 \
-		android-arm \
-		darwin-x64
+		windows-x86
 DOCKER    = docker
 IMAGE     = dimitriss/cross-compiler
 
