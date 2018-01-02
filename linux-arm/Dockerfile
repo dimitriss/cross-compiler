@@ -4,8 +4,8 @@ FROM dimitriss/cross-compiler:base
 RUN dpkg --add-architecture armh
 
 RUN apt-get update && apt-get -y install \
-                        gcc-6-arm-linux-gnueabihf \
-                        g++-6-arm-linux-gnueabihf \
+                        gcc-7-arm-linux-gnueabihf \
+                        g++-7-arm-linux-gnueabihf \
 			crossbuild-essential-armhf
 
 ENV CROSS_TRIPLE arm-linux-gnueabihf
@@ -14,7 +14,7 @@ ENV PATH ${PATH}:${CROSS_ROOT}/bin
 ENV LD_LIBRARY_PATH ${CROSS_ROOT}/lib:${LD_LIBRARY_PATH}
 
 RUN cd /usr/bin && \
-    ln -sf ${CROSS_TRIPLE}-gcc-6 ${CROSS_TRIPLE}-cc && \
-    ln -sf ${CROSS_TRIPLE}-gcc-6 ${CROSS_TRIPLE}-gcc && \
-    ln -sf ${CROSS_TRIPLE}-g++-6 ${CROSS_TRIPLE}-g++ && \
-    ln -sf ${CROSS_TRIPLE}-g++-6 ${CROSS_TRIPLE}-c++
+    ln -sf ${CROSS_TRIPLE}-gcc-7 ${CROSS_TRIPLE}-cc && \
+    ln -sf ${CROSS_TRIPLE}-gcc-7 ${CROSS_TRIPLE}-gcc && \
+    ln -sf ${CROSS_TRIPLE}-g++-7 ${CROSS_TRIPLE}-g++ && \
+    ln -sf ${CROSS_TRIPLE}-g++-7 ${CROSS_TRIPLE}-c++

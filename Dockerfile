@@ -1,4 +1,4 @@
-FROM debian:stretch
+FROM debian:sid
 
 RUN apt-get update && apt-get -y install \
     bash \
