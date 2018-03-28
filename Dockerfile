@@ -9,4 +9,5 @@ RUN apt-get update && apt-get -y install \
     file \
     rsync \
     sed \
-    libtool
+    libtool \
+    upx
