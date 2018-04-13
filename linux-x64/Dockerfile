@@ -7,5 +7,5 @@ ENV LD_LIBRARY_PATH ${CROSS_ROOT}/lib:${LD_LIBRARY_PATH}
 
 RUN mkdir -p ${CROSS_ROOT} && \
     cd /usr/bin && \
-    ln -sf ${CROSS_TRIPLE}-gcc ${CROSS_TRIPLE}-cc && \
-    ln -sf ${CROSS_TRIPLE}-g++ ${CROSS_TRIPLE}-c++
+    ln -sf ${CROSS_TRIPLE}-gcc-6 ${CROSS_TRIPLE}-cc && \
+    ln -sf ${CROSS_TRIPLE}-g++-6 ${CROSS_TRIPLE}-c++
