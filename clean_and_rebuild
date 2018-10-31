@@ -1,5 +1,0 @@
-docker stop $(docker ps -a -q)
-docker rmi -f dimitriss/cross-compiler:windows-x86 dimitriss/cross-compiler:windows-x64 dimitriss/cross-compiler:linux-x86 dimitriss/cross-compiler:linux-x64 dimitriss/cross-compiler:linux-arm dimitriss/cross-compiler:linux-arm64
-docker rm -v $(docker ps -a -q -f status=exited)
-docker rmi $(docker images -f "dangling=true" -q)
-make all
