@@ -1,4 +1,4 @@
-FROM dimitriss/cross-compiler:base
+FROM cross-compiler:base
 
 # Add the cross compiler sources
 RUN dpkg --add-architecture arm64

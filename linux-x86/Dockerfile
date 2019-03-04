@@ -1,4 +1,4 @@
-FROM dimitriss/cross-compiler:base
+FROM cross-compiler:base
 
 RUN apt-get update && apt-get -y install \
     gcc-multilib \

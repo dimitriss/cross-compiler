@@ -1,4 +1,4 @@
-FROM dimitriss/cross-compiler:base
+FROM cross-compiler:base
 
 ENV CROSS_TRIPLE x86_64-linux-gnu
 ENV CROSS_ROOT /usr/${CROSS_TRIPLE}

@@ -5,7 +5,7 @@ PLATFORMS = linux-arm64 \
 		windows-x64 \
 		windows-x86
 DOCKER    = docker
-IMAGE     = dimitriss/cross-compiler
+IMAGE     = cross-compiler
 
 base:
 	$(DOCKER) build -t $(IMAGE):base .
