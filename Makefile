@@ -1,5 +1,5 @@
 PLATFORMS = linux-arm64 \
-		linux-arm \
+		linux-armv7 \
 		linux-x64 \
 		linux-x86 \
 		windows-x64 \
